@@ -20,6 +20,7 @@ a:active,
 a.active {
   color: #8CD6B5;
   outline: none;
+  text-decoration: none !important;
 }
 h1,
 h2,
@@ -30,46 +31,81 @@ h6 {
   font-family: 'Nunito', Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
-hr.star-light,
-hr.star-primary {
+.bucket hr{
+  width: 100px;
+}
+hr.bar-light,
+hr.bar-primary {
   padding: 0;
   border: none;
-  border-top: solid 5px;
+  border-top: solid 4px;
   text-align: center;
   max-width: 250px;
   margin: 25px auto 30px;
 }
-hr.star-light:after,
-hr.star-primary:after {
-  content: "\f005";
-  font-family: FontAwesome;
+hr.bar-light:after,
+hr.bar-primary:after {
   display: inline-block;
   position: relative;
   top: -0.8em;
   font-size: 2em;
   padding: 0 0.25em;
 }
-hr.star-light {
-  border-color: white;
+hr.bar-light {
+  border-color: #FFFBFE;
 }
-hr.star-light:after {
+hr.bar-light:after {
   background-color: #8CD6B5;
-  color: white;
+  color: #FFFBFE;
 }
-hr.star-primary {
+hr.bar-primary {
   border-color: #2C3E50;
 }
-hr.star-primary:after {
-  background-color: white;
+hr.bar-primary:after {
+  background-color: #FFFBFE;
   color: #2C3E50;
 }
 .img-centered {
   margin: 0 auto;
 }
+
+.success-story {
+  text-align:center;
+  color: #333;
+  padding: 25px;
+}
+.success-story h4{
+  color: #5A7D7C;
+  padding-top: 25px;
+}
+.success-story h6{
+  color: #333;
+  font-size: 14px
+}
+.success-story p{
+  color: #333;
+  font-size: 16px;
+  padding-top:20px;
+}
+
+.bucket {
+  text-align:center;
+  background: #5A7D7C;
+  color: #FFFBFE;
+  padding: 10px;
+}
+.bucket h3 {
+  font-style: 'Nunito';
+  text-transform: uppercase;
+}
+.bucket p {
+  font-style: 'Open Sans';
+  font-size: 16px;
+}
 header {
   text-align: center;
   background: #8CD6B5;
-  color: white;
+  color: #FFFBFE;
 }
 header .container {
   padding-top: 100px;
@@ -113,19 +149,19 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-brand {
   font-family: "Nunito", Helvetica, Arial, sans-serif;
-  color: white;
+  color: #FFFBFE;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: white;
+  color: #FFFBFE;
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
-  color: white;
+  color: #FFFBFE;
 }
 .navbar-custom .navbar-nav li a:hover {
   color: #8CD6B5;
@@ -133,27 +169,27 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
-  color: white;
+  color: #FFFBFE;
 }
 .navbar-custom .navbar-nav li.active a {
-  color: white;
+  color: #FFFBFE;
   background: #8CD6B5;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
-  color: white;
+  color: #FFFBFE;
   background: #8CD6B5;
 }
 .navbar-custom .navbar-toggle {
-  color: white;
+  color: #FFFBFE;
   font-size: 10px;
-  border-color: white;
+  border-color: #FFFBFE;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: #8CD6B5;
-  color: white;
+  color: #FFFBFE;
   border-color: #8CD6B5;
 }
 @media (min-width: 768px) {
@@ -185,7 +221,7 @@ section h2 {
 }
 section.success {
   background: #8CD6B5;
-  color: white;
+  color: #FFFBFE;
 }
 @media (max-width: 767px) {
   section {
@@ -195,18 +231,18 @@ section.success {
     padding-top: 75px;
   }
 }
-#portfolio .portfolio-item {
+#services .portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
-#portfolio .portfolio-item .portfolio-link {
+#services .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+#services .portfolio-item .portfolio-link .caption {
+  background: rgba(255, 251, 254, 0.9);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -215,10 +251,10 @@ section.success {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#services .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#services .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -226,20 +262,20 @@ section.success {
   text-align: center;
   top: 50%;
   margin-top: -12px;
-  color: white;
+  color: #8CD6B5;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#services .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#services .portfolio-item .portfolio-link .caption .caption-content h3,
+#services .portfolio-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
 }
-#portfolio * {
+#services * {
   z-index: 2;
 }
 @media (min-width: 767px) {
-  #portfolio .portfolio-item {
+  #services .portfolio-item {
     margin: 0 0 30px;
   }
 }
@@ -293,7 +329,7 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 footer {
-  color: white;
+  color: #FFFBFE;
 }
 footer h3 {
   margin-bottom: 30px;
@@ -310,9 +346,9 @@ footer .footer-below {
   background-color: #233140;
 }
 .btn-outline {
-  color: white;
+  color: #FFFBFE;
   font-size: 20px;
-  border: solid 2px white;
+  border: solid 2px #FFFBFE;
   background: transparent;
   transition: all 0.3s ease-in-out;
   margin-top: 15px;
@@ -322,11 +358,11 @@ footer .footer-below {
 .btn-outline:active,
 .btn-outline.active {
   color: #8CD6B5;
-  background: white;
-  border: solid 2px white;
+  background: #FFFBFE;
+  border: solid 2px #FFFBFE;
 }
 .btn-primary {
-  color: white;
+  color: #FFFBFE;
   background-color: #2C3E50;
   border-color: #2C3E50;
   font-weight: 700;
@@ -336,7 +372,7 @@ footer .footer-below {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: white;
+  color: #FFFBFE;
   background-color: #1a242f;
   border-color: #161f29;
 }
@@ -365,10 +401,10 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-primary .badge {
   color: #2C3E50;
-  background-color: white;
+  background-color: #FFFBFE;
 }
 .btn-success {
-  color: white;
+  color: #FFFBFE;
   background-color: #8CD6B5;
   border-color: #8CD6B5;
   font-weight: 700;
@@ -378,7 +414,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:active,
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
-  color: white;
+  color: #FFFBFE;
   background-color: #128f76;
   border-color: #11866f;
 }
@@ -407,13 +443,13 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-success .badge {
   color: #8CD6B5;
-  background-color: white;
+  background-color: #FFFBFE;
 }
 .btn-social {
   display: inline-block;
   height: 50px;
   width: 50px;
-  border: 2px solid white;
+  border: 2px solid #FFFBFE;
   border-radius: 100%;
   text-align: center;
   font-size: 20px;
