@@ -223,7 +223,6 @@ img
 /* start feature */
 #feature
     {
-        background: #f8f8f8;
         padding-top: 80px;
         padding-bottom: 80px;
     }
@@ -252,6 +251,7 @@ img
 /* start feature1 */
 #feature1
     {
+        background: #f8f8f8;
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -276,6 +276,20 @@ img
         margin-right: 20px;
     }
 /* end feature1 */
+
+/* start about */
+#about
+    {
+        background: #f8f8f8;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+#about h2
+    {
+        padding-bottom: 60px;
+    }
+/* end about */
 
 /* start pricing */
 #pricing
@@ -338,25 +352,6 @@ img
     color: #fff;
 }
 /* end pricing */
-
-/* start download */
-#download
-    {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-#download h2
-    {
-        padding-bottom: 20px;
-    }
-#download .btn
-    {
-        border-radius: 0px;
-        font-weight: bold;
-        margin-top: 20px;
-        padding: 10px 40px 10px 40px;
-    }
-/* end download */
 
 /* start contact */
 #contact
