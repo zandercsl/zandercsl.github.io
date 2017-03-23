@@ -185,10 +185,19 @@ img
     text-align: center;
     width: 100%;
     }
+
+#home h1
+    {
+        font-weight: 600;
+        font-size: 3.5em;
+        padding-bottom: 50px;
+    }
+
 #home p
     {
         font-weight: 400;
         font-style: italic;
+        font-size: 1.6em;
         line-height: 2em;
     }
 #home img
@@ -221,6 +230,12 @@ img
 /* end divider */
 
 /* start feature */
+.success-story 
+    {
+       display: inline-block;
+       text-align: center;
+    }
+
 #feature
     {
         padding-top: 80px;
